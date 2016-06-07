@@ -1,8 +1,6 @@
 # Resources on contenteditable
 
-## Blog posts
-
-* [ContentEditable; W3C Editor's Draft 26 May 2016](https://w3c.github.io/editing/contentEditable.html)
+## Articles &amp; Blog posts
 
 * [Why ContentEditable is Terrible](https://medium.engineering/why-contenteditable-is-terrible-122d8a40e480#.9tiaal7bc)
 
@@ -11,5 +9,9 @@
 * [Fixing ContentEditable, by Piotrek Koszuliński, CKEditor lead developer, Aug. 21, 2015](https://medium.com/content-uneditable/fixing-contenteditable-1a9a5073c35d#.hgyzapq3w)
 
 * [The Road to HTML 5: contentEditable, by Mark Pilgrim,  Mar. 6, 2009](https://blog.whatwg.org/the-road-to-html-5-contenteditable)
+
+## W3C Resources
+
+* [ContentEditable; W3C Editor's Draft 26 May 2016](https://w3c.github.io/editing/contentEditable.html)
 
 * [Editing Explainer; W3C Document 26 May 2016](https://w3c.github.io/editing/editing-explainer.html)
