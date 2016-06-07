@@ -1,3 +1,3 @@
 # text-editor
 
-Notes on creating an HTML embedded text editor that proactively supports accessible authoring practices.
+Notes on creating an HTML-embeddable rich text editor that proactively supports accessible authoring practices.
