@@ -1,6 +1,6 @@
 # Resources on contenteditable
 
-## Articles &amp; Blog posts
+## Articles &amp; Blog Posts
 
 * [Why ContentEditable is Terrible](https://medium.engineering/why-contenteditable-is-terrible-122d8a40e480#.9tiaal7bc) by Nick Santos; Medium.com, May 14, 2014
 
@@ -12,6 +12,6 @@
 
 ## W3C Resources
 
-* [ContentEditable; W3C Editor's Draft 26 May 2016](https://w3c.github.io/editing/contentEditable.html)
-
 * [Editing Explainer; W3C Document 26 May 2016](https://w3c.github.io/editing/editing-explainer.html)
+
+* [ContentEditable; W3C Editor's Draft 26 May 2016](https://w3c.github.io/editing/contentEditable.html)
