@@ -33,3 +33,9 @@
 1. A native <code>contenteditable</code> element violates all three axioms.
 
 2. Embedded HTML editors employ many workarounds to compensate for inconsistencies across the range of <code>contenteditable</code> implementations within browsers.
+
+### Other Conclusions
+
+At some point in the future, if and when <code>contenteditable</code> is significantly modified and improved as outlined in the W3C documents listed above, the best course of action, _then_, might be to build an accessible authoring tool that would work across browsers, a prime example being an enhanced version of the OneNet editor.
+
+For the present, it seems that the only viable choice, given the goals we have discussed, is to add the OneNet editor features to an existing HTML-embeddable editor which has already dealt with the complexities inherent in the various implementations of <code>contenteditable</code> across popular browsers.
