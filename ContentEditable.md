@@ -12,9 +12,9 @@
 
 ## W3C Resources
 
-* [Editing Explainer; W3C Document 26 May 2016](https://w3c.github.io/editing/editing-explainer.html)
+* [ContentEditable](https://w3c.github.io/editing/contentEditable.html) W3C Editor's Draft 26 May 2016
 
-* [ContentEditable; W3C Editor's Draft 26 May 2016](https://w3c.github.io/editing/contentEditable.html)
+* [Editing Explainer](https://w3c.github.io/editing/editing-explainer.html) W3C Document 26 May 2016
 
 ## Notes
 
@@ -22,9 +22,9 @@
 
 #### Axioms for WYSIWYG editing
 
-1. Well-behaved content: There are many ways to mark up text content with styling and produce the same visual result. Example: Using combinations of <code>em</code> &amp; <code>strong</code>. With content, we have a _many-to-one_ mapping.
+1. Well-behaved content: There are many ways to mark up text content with styling and produce the same visual result. Example: Using combinations of <code>em</code> &amp; <code>strong</code>. With content, we have a _many-to-one_  DOM-to-visible mapping.
 
-2. Well-behaved selection: One visible selection can have many DOM representations _and_ one DOM selection can have multiple visual representations. With selection, we have a _many-to-many_ mapping (even messier).
+2. Well-behaved selection: One visible selection can have many DOM representations _and_ one DOM selection can have multiple visual representations. With selection, we have a _many-to-many_ DOM-to-visible mapping (even messier).
 
 3. Closed and complete edits: Implies consistent results across browsers. Example: Pasting text created in one editor (or <code>contenteditable</code> field) into another editor or field.
 
