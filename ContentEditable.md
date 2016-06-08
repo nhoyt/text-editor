@@ -1,4 +1,4 @@
-# Resources on contenteditable
+# Resources on ContentEditable
 
 ## Articles &amp; Blog Posts
 
