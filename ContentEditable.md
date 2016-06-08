@@ -39,3 +39,5 @@
 At some point in the future, if and when <code>contenteditable</code> is significantly modified and improved as outlined in the W3C documents listed above, the best course of action, _then_, might be to build an accessible authoring tool that would work across browsers, a prime example being an enhanced version of the OneNet editor.
 
 For the present, it seems that the only viable choice, given the goals we have discussed, is to add the OneNet editor features to an existing HTML-embeddable editor which has already dealt with the complexities inherent in the various implementations of <code>contenteditable</code> across popular browsers.
+
+As noted in the articles by Piotrek Koszuliński, CKEditor lead developer, even though <code>contenteditable</code> is &lsquo;broken&rsquo;, it is best to use it as a baseline, and then build in features and workarounds as needed. In other words, he advises against scrapping <code>contenteditable</code> altogether and trying to build an embeddable WYSIWYG editor from scratch.
