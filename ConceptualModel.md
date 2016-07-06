@@ -16,6 +16,13 @@ Place cursor in a block of text (e.g. paragraph, possibly empty) and insert (if 
 * Quotation (blockquote)
 * Paragraph (normal)
 
+Can also select multiple consecutive blocks and change all of them to:
+
+* Headings (of a specified level)
+* List items
+* Quotations
+* Paragraphs (normal)
+
 ### Insert formatted block
 Only operates on an empty paragraph? (use case: place cursor within heading or list item?)
 
