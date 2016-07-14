@@ -1,4 +1,10 @@
 ## What is the conceptual model for text editing in a WYSIWYG editor?
+Objective: create a conceptual model for users that:
+
+* is simple to understand;
+* improves the user experience (fewer frustrations, easier to select the appropriate task);
+* provides a framework for thinking about documents as a sequential collection of block elements;
+* results in a document with "baked-in" accessibility features.
 
 ### Toolbar: standard operations w/ icon buttons
 * Cut
