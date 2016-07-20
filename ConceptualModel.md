@@ -10,31 +10,33 @@ Based on concepts and functionality of the OneNet editor created for DHS, State 
 
 ### OBJECTS
 * document
-* block (paragraph, heading, secondary)
-* compound block (list, image/figure, table)
+* simple block (paragraph, heading, other?)
+* compound block (list, figure/image, table)
 * text (sequence of characters within a block)
 * vertical separator (automatically inserted between blocks, making them both semantically and visually distinct)
 
-#### BLOCK TYPES
+#### SIMPLE BLOCK TYPES
 * paragraph
 * heading
+
+#### COMPOUND BLOCK TYPES
 * list
-* link
-* image
+* figure/image
 * table
+* blockquote (less common)
+* address (less common)
 
 #### ATTRIBUTES
-* block format
+* simple block format
+* compound block format
 * inline format
 
 ### CONTAINMENT HIERARCHY
 * document
-    * block (simple)
+    * simple block
         * block format
             * paragraph (after: paragraph)
             * heading (after: paragraph)
-            * blockquote (after: paragraph)
-            * address (after: paragraph)
             * ...
         * text
             * inline format
@@ -43,6 +45,7 @@ Based on concepts and functionality of the OneNet editor created for DHS, State 
                 * italic
                 * link
                 * ...
+
     * compound block
         * list (bulleted, numbered)
             * list item (after: list item)
@@ -52,6 +55,9 @@ Based on concepts and functionality of the OneNet editor created for DHS, State 
             * caption (optional)
         * table
             * table row (after: table row)
+        * blockquote (after: paragraph within blockquote)
+        * address (after: newline with no vertical separator)
+
     * vertical separator
 
 ### TASKS/ACTIONS
