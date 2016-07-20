@@ -1,10 +1,12 @@
-## What is the conceptual model for creating accessible documents using an HTML-embedded WYSIWYG editor?
+## Conceptual model for creating accessible documents using an HTML-embedded WYSIWYG editor
 Objective: create a conceptual model for users that:
 
 * is simple to understand;
 * improves the user experience (fewer frustrations, easier to select the appropriate task);
 * provides a framework for thinking about, and working with, documents as a sequential collection of block elements;
 * results in a document with "baked-in" accessibility features.
+
+Based on concepts and functionality of the OneNet editor created for DHS, State of Illinois.
 
 ### OBJECTS
 * document
