@@ -15,6 +15,227 @@
 
 <section>
   <h2>Objects, Actions &amp; Relationships Table</h2>
+  <table style="width: 90%">
+  <thead>
+    <tr>
+    <th>OBJECT TYPE</th><th>EXPOSED OBJECTS</th><th>ACTIONS</th><th>ATTRIBUTES</th><th>RELATIONSHIPS/CONSTRAINTS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- ---------------------------- -->
+    <tr>
+    <th>text/inline</th>
+
+    <td>text characters:
+    <ul>
+    <li>alpha-numeric</li>
+    <li>symbols</li>
+    <li>punctuation</li>
+    </ul>
+    inline objects:
+    <ul>
+    <li>image</li>
+    <li>link</li>
+    </ul>
+    </td>
+
+    <td>
+    <ul>
+    <li>add/modify/delete</li>
+    <li>change styling</li>
+    <li>convert to another object type</li>
+    </ul>
+    </td>
+
+    <td>
+    text styles:
+    <ul>
+    <li>strong</li>
+    <li>em</li>
+    <li>underline</li>
+    <li>strikethrough</li>
+    </ul>
+    </td>
+
+    <td>
+    <ul>
+    <li>always contained within block object (e.g., heading, paragraph, list item)</li>
+    <li>conversion targets: link, others (?)</li>
+    </ul>
+    </td>
+    </tr>
+
+    <!-- ---------------------------- -->
+    <tr>
+    <th>link</th>
+    <td>
+    <ul>
+    <li>text/inline content with special formatting (inline)</li>
+    </ul>
+    </td>
+
+    <td>
+    <ul>
+    <li>specify/change href</li>
+    <li>convert to another object type</li>
+    <li>text/inline content actions</li>
+    </ul>
+    </td>
+
+    <td>
+    <ul>
+    <li>href</li>
+    <li>others (?)</li>
+    </ul>
+    </td>
+
+    <td>
+    <ul>
+    <li>applied to contiguous text/inline objects</li>
+    <li>conversion targets: text/inline</li>
+    </ul>
+    </td>
+    </tr>
+
+    <!-- ---------------------------- -->
+    <tr>
+    <th>heading</th>
+    <td>
+    <ul>
+    <li>text/inline content with special formatting (block)</li>
+    </ul>
+    </td>
+
+    <td>
+    <ul>
+    <li>add/delete (block)</li>
+    <li>change heading level</li>
+    <li>convert to another object type</li>
+    <li>text/inline content actions</li>
+    </ul>
+    </td>
+
+    <td>
+    <ul>
+    <li>heading level: 2 &#8211; 6</li>
+    </ul>
+    </td>
+
+    <td>
+    <ul>
+    <li>relationship with previous heading</li>
+    <li>level constraint based on previous heading relationship</li>
+    <li>enter key creates: paragraph</li>
+    <li>conversion targets: paragraph, list item</li>
+    </ul>
+    </td>
+    </tr>
+
+    <!-- ---------------------------- -->
+    <tr>
+    <th>paragraph</th>
+    <td>
+    <ul>
+    <li>text/inline content (block)</li>
+    </ul>
+    </td>
+
+    <td>
+    <ul>
+    <li>add/delete (block)</li>
+    <li>convert to another object type</li>
+    <li>text/inline content actions</li>
+    </ul>
+    </td>
+
+    <td>(?)</td>
+
+    <td>
+    <ul>
+    <li>enter key creates: new paragraph</li>
+    <li>conversion targets: heading, list item</li>
+    </ul>
+    </td>
+    </tr>
+
+    <!-- ---------------------------- -->
+    <tr>
+    <th>list</th>
+    <td>
+    <ul>
+    <li>list items</li>
+    <li>text/inline content (block)</li>
+    </ul>
+    </td>
+
+    <td>
+    <ul>
+    <li>specify/change list type</li>
+    <li>add/delete (block)</li>
+    <li>convert to another object type</li>
+    <li>text/inline content actions</li>
+    </ul>
+    </td>
+
+    <td>list type:
+    <ul>
+    <li>bullets</li>
+    <li>numbering</li>
+    </ul>
+    </td>
+
+    <td>
+    <ul>
+    <li>enter key creates: new list item</li>
+    <li>conversion targets: heading, paragraph</li>
+    </ul>
+    </td>
+    </tr>
+
+    <!-- ---------------------------- -->
+    <tr>
+    <th>table</th>
+    <td>
+    <ul>
+    <li>column headers</li>
+    <li>columns</li>
+    <li>row headers</li>
+    <li>rows</li>
+    <li>data cells</li>
+    </ul>
+    </td>
+
+    <td>
+    <ul>
+    <li>create table: specify dimensions, headers, header labels</li>
+    <li>add/delete column</li>
+    <li>add/delete row</li>
+    <li>modify header labels</li>
+    <li>data cells: text/inline content actions</li>
+    </ul>
+    </td>
+
+    <td></td>
+
+    <td>
+    <ul>
+    <li>last row, last column: (some key) creates: new row</li>
+    <li>conversion targets: none (?)</li>
+    </ul>
+    </td>
+    </tr>
+
+    <!-- ---------------------------- -->
+    <tr>
+    <th>image</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    </tr>
+  </tbody>
+  </table>
+
 </section>
 </body>
 </html>
