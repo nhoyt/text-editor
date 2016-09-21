@@ -70,7 +70,7 @@
     <th>link</th>
     <td>
     <ul>
-    <li>text/inline content with special formatting (inline)</li>
+    <li>text/inline content as link-formatted span</li>
     </ul>
     </td>
 
@@ -91,6 +91,7 @@
 
     <td>
     <ul>
+    <li>special case of text/inline</li>
     <li>applied to contiguous text/inline objects</li>
     <li>conversion targets: non-link text/inline</li>
     </ul>
@@ -102,7 +103,7 @@
     <th>heading</th>
     <td>
     <ul>
-    <li>text/inline content with special formatting (block)</li>
+    <li>text/inline content as standalone, heading-formatted block</li>
     </ul>
     </td>
 
@@ -136,7 +137,7 @@
     <th>paragraph</th>
     <td>
     <ul>
-    <li>text/inline content (block)</li>
+    <li>text/inline content as standalone block</li>
     </ul>
     </td>
 
@@ -217,12 +218,20 @@
     </ul>
     </td>
 
-    <td></td>
+    <td>
+    <ul>
+    <li>number of columns</li>
+    <li>number of rows</li>
+    <li>has column headers</li>
+    <li>has row headers</li>
+    </ul>
+    </td>
 
     <td>
     <ul>
     <li>last row, last column: (some key) creates: new row</li>
-    <li>conversion targets: none (?)</li>
+    <li>conversion targets for table: none</li>
+    <li>conversion targets for data cell contents: heading, paragraph, list, others (?)</li>
     </ul>
     </td>
     </tr>
