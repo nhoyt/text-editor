@@ -1,0 +1,112 @@
+html,
+body {
+  font: normal 95% Helvetica, Verdana, Arial, sans-serif;
+  color: #000;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0.5em 0.7em;
+  margin: 0 4em 0 1em;
+  background: #fff;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 1em;
+  color: #630;
+  background: transparent;
+}
+
+h1 {
+  font: normal 180% Helvetica, Verdana, Arial, sans-serif;
+  margin-bottom: 0;
+}
+
+h2 {
+  font: normal 150% Helvetica, Verdana, Arial, sans-serif;
+  margin-bottom: 1em;
+}
+
+h3 {
+  font: normal 120% Helvetica, Verdana, Arial, sans-serif;
+  margin-bottom: 1em;
+}
+
+h4 {
+  font: normal 100% Helvetica, Verdana, Arial, sans-serif;
+  margin-top: 1.5em;
+  margin-bottom: 0;
+}
+
+section:not(:first-of-type) {
+  margin-top: 2em;
+}
+
+a {
+  color: #009;
+  background: transparent;
+}
+
+a:visited {
+  color:#360;
+  background:transparent;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color:#000;
+  background-color: #fc0;
+}
+
+img {
+  max-width: 100%;
+  border: none;
+}
+
+code {
+  font-family: Courier, monospace;
+  font-weight: bold;
+}
+
+code.element {
+  display: block;
+  margin-bottom: 1.25em;
+}
+
+.above, label > div {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.below {
+  display: block;
+  margin-top: 0.5em;
+}
+
+pre.src {
+  font-family: Courier, monospace;
+  font-size: 95%;
+  margin: 0.25em 0;
+  padding: 0;
+}
+
+ul.home {
+  padding-left: 1.5em;
+}
+
+ul.home > li {
+  font-size: 120%;
+  margin: 1em 0 0 0;
+  padding: 0;
+}
+
+div.demo {
+   margin-top: 1em;
+   border:1px solid gray;
+   padding: 1em 2em;
+}
