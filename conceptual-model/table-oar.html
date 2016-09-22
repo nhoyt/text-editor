@@ -14,7 +14,204 @@
 </section>
 
 <section>
-  <h2>Objects, Actions &amp; Relationships Table</h2>
+  <h2>Objects, Actions &amp; Relationships Tables</h2>
+
+  <h3>Primary Block Objects</h3>
+  <table style="width: 90%">
+  <thead>
+    <tr>
+    <th>OBJECT TYPE</th><th>EXPOSED OBJECTS</th><th>ACTIONS</th><th>ATTRIBUTES</th><th>RELATIONSHIPS/CONSTRAINTS</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <!-- ---------------------------- -->
+    <tr>
+    <th>heading</th>
+    <td>
+    <ul>
+    <li>text/inline content as standalone, heading-formatted block</li>
+    </ul>
+    </td>
+
+    <td>
+    <ul>
+    <li>add/delete (block)</li>
+    <li>change heading level</li>
+    <li>convert to another object type</li>
+    <li>text/inline content actions</li>
+    </ul>
+    </td>
+
+    <td>
+    <ul>
+    <li>heading level: 2 &#8211; 6</li>
+    </ul>
+    </td>
+
+    <td>
+    <ul>
+    <li>important relationship with previous heading</li>
+    <li>level constrained by previous heading level (same or next lower)</li>
+    <li>enter key creates: paragraph (user-configurable to same-level heading?)</li>
+    <li>conversion targets: paragraph, list item</li>
+    </ul>
+    </td>
+    </tr>
+
+    <!-- ---------------------------- -->
+    <tr>
+    <th>paragraph</th>
+    <td>
+    <ul>
+    <li>text/inline content as standalone block</li>
+    </ul>
+    </td>
+
+    <td>
+    <ul>
+    <li>add/delete (block)</li>
+    <li>convert to another object type</li>
+    <li>text/inline content actions</li>
+    </ul>
+    </td>
+
+    <td></td>
+
+    <td>
+    <ul>
+    <li>enter key creates: new paragraph</li>
+    <li>conversion targets: heading, list item</li>
+    </ul>
+    </td>
+    </tr>
+
+    <!-- ---------------------------- -->
+    <tr>
+    <th>list</th>
+    <td>
+    <ul>
+    <li>list items</li>
+    <li>text/inline content within list items</li>
+    </ul>
+    </td>
+
+    <td>
+    <ul>
+    <li>specify/change list type</li>
+    <li>add/delete (block)</li>
+    <li>convert to another object type</li>
+    <li>text/inline content actions</li>
+    <li>choose list styling (e.g. indentation)
+    </ul>
+    </td>
+
+    <td>list type:
+    <ul>
+    <li>bullets</li>
+    <li>numbering</li>
+    </ul>
+    </td>
+
+    <td>
+    <ul>
+    <li>enter key creates: new list item</li>
+    <li>conversion targets: heading, paragraph</li>
+    </ul>
+    </td>
+    </tr>
+
+    <!-- ---------------------------- -->
+    <tr>
+    <th>table</th>
+    <td>
+    <ul>
+    <li>column headers</li>
+    <li>columns</li>
+    <li>row headers</li>
+    <li>rows</li>
+    <li>data cells</li>
+    <li>text/inline content within data cells</li>
+    <li>other object types within data cells (e.g. paragraph, list)</li>
+    </ul>
+    </td>
+
+    <td>
+    <ul>
+    <li>create table: specify dimensions, headers, header labels</li>
+    <li>add/delete column</li>
+    <li>add/delete row</li>
+    <li>modify header labels</li>
+    <li>data cells: text/inline content actions</li>
+    </ul>
+    </td>
+
+    <td>
+    <ul>
+    <li>number of columns</li>
+    <li>number of rows</li>
+    <li>has column headers</li>
+    <li>has row headers</li>
+    </ul>
+    </td>
+
+    <td>
+    <ul>
+    <li>last row, last column: (some key) creates: new row</li>
+    <li>conversion targets for table: none</li>
+    <li>conversion targets for data cell contents: paragraph, list item, others (?)</li>
+    </ul>
+    </td>
+    </tr>
+
+    <!-- ---------------------------- -->
+    <tr>
+    <th>image</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    </tr>
+  </tbody>
+  </table>
+
+  <h3>Secondary Block Objects</h3>
+  <table style="width: 90%">
+  <thead>
+    <tr>
+    <th>OBJECT TYPE</th><th>EXPOSED OBJECTS</th><th>ACTIONS</th><th>ATTRIBUTES</th><th>RELATIONSHIPS/CONSTRAINTS</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <!-- ---------------------------- -->
+    <tr>
+    <th>block quote</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    </tr>
+
+    <tr>
+    <th>preformatted block</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    </tr>
+
+    <tr>
+    <th>address</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    </tr>
+  </tbody>
+  </table>
+
+  <h3>Text/Inline Objects</h3>
   <table style="width: 90%">
   <thead>
     <tr>
@@ -99,155 +296,16 @@
     </td>
     </tr>
 
-    <!-- ---------------------------- -->
     <tr>
-    <th>heading</th>
-    <td>
-    <ul>
-    <li>text/inline content as standalone, heading-formatted block</li>
-    </ul>
-    </td>
-
-    <td>
-    <ul>
-    <li>add/delete (block)</li>
-    <li>change heading level</li>
-    <li>convert to another object type</li>
-    <li>text/inline content actions</li>
-    </ul>
-    </td>
-
-    <td>
-    <ul>
-    <li>heading level: 2 &#8211; 6</li>
-    </ul>
-    </td>
-
-    <td>
-    <ul>
-    <li>important relationship with previous heading</li>
-    <li>level constrained by previous heading level (same or next lower)</li>
-    <li>enter key creates: paragraph (user-configurable to same-level heading?)</li>
-    <li>conversion targets: paragraph, list item</li>
-    </ul>
-    </td>
-    </tr>
-
-    <!-- ---------------------------- -->
-    <tr>
-    <th>paragraph</th>
-    <td>
-    <ul>
-    <li>text/inline content as standalone block</li>
-    </ul>
-    </td>
-
-    <td>
-    <ul>
-    <li>add/delete (block)</li>
-    <li>convert to another object type</li>
-    <li>text/inline content actions</li>
-    </ul>
-    </td>
-
-    <td></td>
-
-    <td>
-    <ul>
-    <li>enter key creates: new paragraph</li>
-    <li>conversion targets: heading, list item</li>
-    </ul>
-    </td>
-    </tr>
-
-    <!-- ---------------------------- -->
-    <tr>
-    <th>list</th>
-    <td>
-    <ul>
-    <li>list items</li>
-    <li>text/inline content within list items</li>
-    </ul>
-    </td>
-
-    <td>
-    <ul>
-    <li>specify/change list type</li>
-    <li>add/delete (block)</li>
-    <li>convert to another object type</li>
-    <li>text/inline content actions</li>
-    </ul>
-    </td>
-
-    <td>list type:
-    <ul>
-    <li>bullets</li>
-    <li>numbering</li>
-    </ul>
-    </td>
-
-    <td>
-    <ul>
-    <li>enter key creates: new list item</li>
-    <li>conversion targets: heading, paragraph</li>
-    </ul>
-    </td>
-    </tr>
-
-    <!-- ---------------------------- -->
-    <tr>
-    <th>table</th>
-    <td>
-    <ul>
-    <li>column headers</li>
-    <li>columns</li>
-    <li>row headers</li>
-    <li>rows</li>
-    <li>data cells</li>
-    <li>text/inline content within data cells</li>
-    <li>other object types within data cells (e.g. paragraph, list)</li>
-    </ul>
-    </td>
-
-    <td>
-    <ul>
-    <li>create table: specify dimensions, headers, header labels</li>
-    <li>add/delete column</li>
-    <li>add/delete row</li>
-    <li>modify header labels</li>
-    <li>data cells: text/inline content actions</li>
-    </ul>
-    </td>
-
-    <td>
-    <ul>
-    <li>number of columns</li>
-    <li>number of rows</li>
-    <li>has column headers</li>
-    <li>has row headers</li>
-    </ul>
-    </td>
-
-    <td>
-    <ul>
-    <li>last row, last column: (some key) creates: new row</li>
-    <li>conversion targets for table: none</li>
-    <li>conversion targets for data cell contents: paragraph, list item, others (?)</li>
-    </ul>
-    </td>
-    </tr>
-
-    <!-- ---------------------------- -->
-    <tr>
-    <th>image</th>
+    <th>Image</th>
     <td></td>
     <td></td>
     <td></td>
     <td></td>
     </tr>
+
   </tbody>
   </table>
-
 </section>
 </body>
 </html>
