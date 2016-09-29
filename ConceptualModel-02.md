@@ -1,4 +1,4 @@
-# Conceptual Model v2.0
+# Conceptual Model v4.0
 
 This document presents a vocabulary that relates to users' task domain when using
 a text-editor. It attempts to provide terminology for the objects, attributes and
@@ -15,6 +15,7 @@ available actions that map to users' tasks when creating or editing a document.
 
 ### list
 * list style
+* title (optional)
 * content: list items
 
 ### list item
@@ -24,15 +25,28 @@ available actions that map to users' tasks when creating or editing a document.
 ### table
 * number of columns
 * number of rows
-* content: column headers, row headers, columns, rows, data cells
+* column header labels
+* row header labels
+* title (optional)
+* long description (optional)
+* content: data cells
+
+### table data cell
+* content: text/inline, blocks (excluding table, others?)
 
 ### image
 * alt text
+* long description (optional)
 * width and height?
 * content: image (from file/library)
 
-### figure
-* content: image(s), caption
+### video
+* title
+* content: video (from file/library)
+
+### audio
+* title
+* content: audio (from file/library)
 
 ### block quote
 * content: headings, paragraphs, lists, images
@@ -70,6 +84,7 @@ available actions that map to users' tasks when creating or editing a document.
 
 #### list
 * change list style (choices among bullets and numbers)
+* add/modify/delete title
 * users interact with list items; editor considers all contiguous list items
   part of the same list
 
@@ -79,6 +94,9 @@ available actions that map to users' tasks when creating or editing a document.
 #### table
 * add/delete column
 * add/delete row
+* modify column headers and/or row headers
+* add/modify/delete title
+* add/modify/delete long description
 
 ### object-specific inline actions
 
@@ -110,7 +128,7 @@ available actions that map to users' tasks when creating or editing a document.
 * In general, blocks need to maintain their integrity (you can't easily demolish
   them by inserting random blocks within them) but must also be easily divided.
 
-### block selection and deletion
+### block selection, conversion and deletion
 * Need to make it clear how blocks are selected, to allow modification of their
   properties, and what needs to happen in order to delete them.
 * For example, a paragraph can be converted to a heading or list item by placing
