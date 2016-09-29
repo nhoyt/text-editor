@@ -97,6 +97,7 @@ available actions that map to users' tasks when creating or editing a document.
 * modify column headers and/or row headers
 * add/modify/delete title
 * add/modify/delete long description
+* merge cells
 
 ### object-specific inline actions
 
