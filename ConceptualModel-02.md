@@ -53,7 +53,7 @@ available actions that map to users' tasks when creating or editing a document.
 ## ACTIONS
 
 ### block actions
-* insert block
+* insert block (at top level of parent context -- see notes)
 * convert existing block to another type of block
 * delete block (must delete its contents)
 
@@ -96,6 +96,16 @@ available actions that map to users' tasks when creating or editing a document.
   considering the available actions on a particular block.
 * Need to encourage/prioritize block actions (insert block, convert to another
   block) over text/inline styling actions.
+* A block can only be inserted at the top level of the parent context, which may
+  be (1) the document, (2) a table data cell or (3) a block quote (others?).
+* A paragraph can be split into two paragraphs using the enter key.
+* A list can be split into two lists using the enter key twice in succession.
+* These actions are necessary in order to insert a block, i.e. the user is not
+  permitted to insert a block within a paragraph or list.
+* Likewise, tables need a mechanism for splitting into two tables.
+* In general, blocks need to maintain their integrity (you can't easily demolish
+  them by inserting random blocks within them) but must also be easily divided.
+
 
 ## RELATIONSHIPS
 
