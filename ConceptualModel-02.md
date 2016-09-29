@@ -113,11 +113,11 @@ available actions that map to users' tasks when creating or editing a document.
 ### block selection and deletion
 * Need to make it clear how blocks are selected, to allow modification of their
   properties, and what needs to happen in order to delete them.
-* For example, paragraph can be converted to heading or list item by placing the
-  cursor at the beginning, end or anywhere in between and choosing action.
-* On the other hand, a paragraph can be deleted only be deleting all of its
+* For example, a paragraph can be converted to a heading or list item by placing
+  the cursor at the beginning, end or anywhere in between and choosing action.
+* On the other hand, a paragraph can be deleted only by deleting all of its
   text/inline content. A list can be deleted only by deleting all of its list
-  items.
+  items, and list items are deleted by deleting their text/inline content.
 
 ## RELATIONSHIPS
 
