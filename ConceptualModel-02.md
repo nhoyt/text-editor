@@ -54,8 +54,9 @@ available actions that map to users' tasks when creating or editing a document.
 
 ### block actions
 * insert block (at top level of parent context -- see notes)
+* select block and modify its properties (how to select table?)
 * convert existing block to another type of block
-* delete block (must delete its contents)
+* delete block (for some block types, must delete contents)
 
 ### text/inline actions
 * add/modify/delete text
@@ -90,12 +91,15 @@ available actions that map to users' tasks when creating or editing a document.
 
 ## NOTES ON ACTIONS
 
+### block actions vs. text/inline actions
 * Need to make a clear distinction between text/inline actions and block actions.
 * For example, for all of the block objects that contain text/inline, all of the
   text/inline actions are available, and thus can be factored out when
   considering the available actions on a particular block.
 * Need to encourage/prioritize block actions (insert block, convert to another
   block) over text/inline styling actions.
+
+### block insertions and splits
 * A block can only be inserted at the top level of the parent context, which may
   be (1) the document, (2) a table data cell or (3) a block quote (others?).
 * A paragraph can be split into two paragraphs using the enter key.
@@ -106,6 +110,14 @@ available actions that map to users' tasks when creating or editing a document.
 * In general, blocks need to maintain their integrity (you can't easily demolish
   them by inserting random blocks within them) but must also be easily divided.
 
+### block selection and deletion
+* Need to make it clear how blocks are selected, to allow modification of their
+  properties, and what needs to happen in order to delete them.
+* For example, paragraph can be converted to heading or list item by placing the
+  cursor at the beginning, end or anywhere in between and choosing action.
+* On the other hand, a paragraph can be deleted only be deleting all of its
+  text/inline content. A list can be deleted only by deleting all of its list
+  items.
 
 ## RELATIONSHIPS
 
