@@ -1,0 +1,108 @@
+# Conceptual Model v2.0
+
+This document presents a vocabulary that relates to users' task domain when using
+a text-editor. It attempts to provide terminology for the objects, attributes and
+available actions that map to users' tasks when creating or editing a document.
+
+## BLOCK OBJECTS/ATTRIBUTES
+
+### heading
+* level (2 - 6)
+* content: text/inline
+
+### paragraph
+* content: text/inline
+
+### list
+* list style
+* content: list items
+
+### list item
+* indent level (0 - 5)
+* content: text/inline
+
+### table
+* number of columns
+* number of rows
+* content: column headers, row headers, columns, rows, data cells
+
+### image
+* alt text
+* width and height?
+* content: image (from file/library)
+
+### figure
+* content: image(s), caption
+
+### block quote
+* content: headings, paragraphs, lists, images
+
+## TEXT/INLINE OBJECTS/ATTRIBUTES
+
+### text
+* content: printable characters/permitted inline objects
+
+### link
+* href
+* content: text/inline
+
+### image
+* alt text
+* content: image (from file/library)
+
+## ACTIONS
+
+### block actions
+* insert block
+* convert existing block to another type of block
+* delete block (must delete its contents)
+
+### text/inline actions
+* add/modify/delete text
+* add/modify/delete styling
+* insert/modify/delete inline object (link, image)
+
+### object-specific block actions
+
+#### heading
+* change level
+
+#### list
+* change list style (choices among bullets and numbers)
+* users interact with list items; editor considers all contiguous list items
+  part of the same list
+
+#### list item
+* indent/outdent
+
+#### table
+* add/delete column
+* add/delete row
+
+### object-specific inline actions
+
+#### link
+* modify href
+
+#### image
+* modify alt text
+
+
+## NOTES ON ACTIONS
+
+* Need to make a clear distinction between text/inline actions and block actions.
+* For example, for all of the block objects that contain text/inline, all of the
+  text/inline actions are available, and thus can be factored out when
+  considering the available actions on a particular block.
+* Need to encourage/prioritize block actions (insert block, convert to another
+  block) over text/inline styling actions.
+
+## RELATIONSHIPS
+
+* **simple block** (heading, paragraph, list item) contains text/inline only
+* **compound block** (list, table, table column, table row) contains sub-blocks
+  (list items, data cells)
+* **table data cell** is a hybrid -- may contain text/inline or blocks (e.g.
+  paragraphs, list/list items)
+* **image** is unique -- no visible text is required (optional caption?) but
+  must have alt text (short description) and may have long description
