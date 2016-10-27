@@ -1,16 +1,41 @@
-# Conceptual Model v4.0
+# A11y First Project: CKEditor Modifications — Conceptual Model v4.1
 
 This document presents a vocabulary that relates to users' task domain when using
 a text-editor. It attempts to provide terminology for the objects, attributes and
 available actions that map to users' tasks when creating or editing a document.
 
+## HIGH-LEVEL DESCRIPTION OF PURPOSE AND FUNCTIONALITY
+
+The goal of the project is to proactively support authors in creating accessible
+documents by modifying the CKEditor user interface to include behaviors that guide
+authors in adding and editing accessible web content.
+
+By encouraging users to think primarily in terms of the structural components of
+documents, we can then guide them through the creation of website content by
+capturing up front the information specific to various types of content (e.g.,
+headings, lists and images), that ensure their accessibility.
+
+### FUNCTIONALITY
+* proactively promote thinking in terms of structural blocks as the main components
+of a document
+* for specific block types, prompt the user for semantic clarification (e.g.,
+whether list is bulleted or numbered, image text alternative), or when appropriate,
+simply limit the available choices (e.g., heading levels)
+* make it possible to style inline content, but discourage users from reaching for
+this type of action on first impulse (i.e., first, think semantically)
+
 ## BLOCK OBJECTS/ATTRIBUTES
+
+### paragraph
+* content: text/inline
+* Note 1: This is the default block type. When some other block type formatting
+is removed (e.g., from a heading or list), the block(s) will automatically default
+to paragraph(s).
+* Note 2: Because this is the default block type, the label 'paragraph' is deemed
+unnecessary and should not appear in the user interface.
 
 ### heading
 * level (2 - 6)
-* content: text/inline
-
-### paragraph
 * content: text/inline
 
 ### list
