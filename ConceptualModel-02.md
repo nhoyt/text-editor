@@ -78,8 +78,8 @@ unnecessary and should not appear in the user interface.
 
 ## TEXT/INLINE OBJECTS/ATTRIBUTES
 
-### text
-* content: printable characters/permitted inline objects
+### text/inline
+* content: characters, punctuation, symbols, whitespace and permitted inline objects
 
 ### link
 * href
