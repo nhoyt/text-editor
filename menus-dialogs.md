@@ -30,7 +30,12 @@
 ### Inline Style
 * Bold
 * Italic
-...
+* Underline
+* Strikethrough
+* Superscript
+* Subscript
+* Abbreviation
+* Highlighter
 * Remove Style
 
 ## Buttons that invoke dialog boxes
